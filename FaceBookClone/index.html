@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebuk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/fb.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a5f6897527.js" crossorigin="anonymous"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="flex-container">
+            <!-- Icons on the left-->
+            <img class="header--logo" src="images/logoFb.png">
+            <div class="header--search-bar-container">
+                <input class="header--search-bar" type="text" placeholder="&#xf002 Find one Facebuk" size="50">
+            </div>
+            <!-- Icons on the middle-->
+            <ul class="flex-container flex-container--icon">
+                <li class="header--icon-container header--icon-container__rect header--icon-container__rect-active">
+                    <a href="#" class="header--icon"><i class="fa-solid fa-house-chimney "></i> </a>
+                </li>
+
+                <li class="header--icon-container header--icon-container__rect">
+                    <a href="#" class="header--icon"><i class="fa-solid fa-video "></i></a>
+                </li>
+
+                <li class="header--icon-container header--icon-container__rect ">
+                    <a href="# " class="header--icon "><i class="fa-solid fa-basket-shopping "></i></a>
+                </li>
+
+                <li class="header--icon-container header--icon-container__rect ">
+                    <a href="# " class="header--icon "><i class="fa-solid fa-user-group "></i></a>
+                </li>
+                <li class="header--icon-container header--icon-container__rect ">
+                    <a href="# " class="header--icon "><i class="fa-solid fa-gamepad "></i></a>
+                </li>
+            </ul>
+            <!-- Icons on the right-->
+            <ul class="flex-container flex-container--util ">
+                <li class=" .header--icon-container header-icon-container__round ">
+                    <a class="util-icon " style="position: relative; ">
+                        <img class="header-avatar avatar " src="images/header-ava.png ">
+                        <span class="header-avatar--name ">Linh</span>
+                    </a>
+                </li>
+                <li class="header--icon-container header-icon-container__round ">
+                    <a class="util-icon ">
+                        <i class="fa-solid fa-bars "></i>
+                    </a>
+                </li>
+                <li class="header--icon-container header-icon-container__round ">
+                    <a class="util-icon ">
+                        <i class="fa-solid fa-keyboard "></i>
+                    </a>
+                </li>
+                <li class="header--icon-container header-icon-container__round ">
+                    <a class="util-icon ">
+                        <i class="fa-solid fa-bell "></i>
+                    </a>
+                </li>
+                <li class="header--icon-container header-icon-container__round ">
+                    <a class="util-icon ">
+                        <i class="fa-solid fa-screwdriver-wrench "></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- End of header-->
+    <div class="nav-left ">
+        <div class="nav-left--half ">
+            <div class="nav-left--item-container ">
+                <img class="avatar .nav-left-icon--item nav-left--avatar" src="images/header-ava.png " alt="facebook ">
+                <span class="nav-left-icon--title"> Linh Linh</span>
+            </div>
+
+            <div class="nav-left--item-container ">
+                <img src="images/friends.png " alt="friends-icon " class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Friends</span>
+            </div>
+
+            <div class="nav-left--item-container ">
+                <img src="images/group.png" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Groups</span>
+            </div>
+
+            <div class="nav-left--item-container ">
+                <img src="images/home-button.png" alt="icon market" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Market</span>
+            </div>
+
+            <div class="nav-left--item-container ">
+                <img src="images/play.png" alt="icon for play video" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Watch</span>
+            </div>
+
+            <div class="nav-left--item-container ">
+                <img src="images/rewind-time.png" alt="icon for rewind your post" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Memories</span>
+            </div>
+            <div id="more-button" onclick="showMore()" class="nav-left--item-container">
+                <img src="images/arrow-down.png" class="nav-left-icon--item " alt="">
+                <span class="nav-left-icon--title">Show More </span>
+            </div>
+            <div id="more" class="nav-left--item-container">
+                <img src="images/save.png" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Saved</span>
+            </div>
+            <div id="more" class="nav-left--item-container">
+                <img src="images/save.png" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Saved</span>
+            </div>
+            <div id="more" class="nav-left--item-container">
+                <img src="images/save.png" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Saved</span>
+            </div>
+            <div id="more" onclick="showLess()" class="nav-left--item-container">
+                <img src="images/up-arrow.png" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Show Less</span>
+            </div>
+
+        </div>
+        <div class="nav-left--half nav-left--bottom-half">
+            <div class="nav-left--title">
+                <p class="nav-left--title-header"> Your shortcuts</p>
+                <p style="padding-right:3px;"> Edit</p>
+            </div>
+            <div class="nav-left--item-container ">
+                <img src="images/IMG_20200701_181545.jpg" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Go somewhere else</span>
+            </div>
+            <div class="nav-left--item-container ">
+                <img src="images/linhaidang-firefly.png" alt="" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Review Vung Tau</span>
+            </div>
+            <div class="nav-left--item-container ">
+                <img src="images/LUK2.jpg" alt="" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Little UK Saigon</span>
+            </div>
+            <div class="nav-left--item-container ">
+                <img src="images/Phú Quốc.png" alt="" class="nav-left-icon--item ">
+                <span class="nav-left-icon--title"> Whats in Phu Quoc ?</span>
+            </div>
+        </div>
+        <footer>Made by Bui Thanh Tu. 15/5/2022. Contact via: tonyandy789@gmail.com.tonyandy789 © 2022</footer>
+    </div>
+
+</body>
+
+</html>
