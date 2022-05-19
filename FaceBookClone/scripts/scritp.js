@@ -1,6 +1,5 @@
 function showMore() {
     var more = document.querySelectorAll("#more")
-    console.log("hi")
     var moreButton = document.getElementById("more-button")
     if (moreButton.style.display != "none") {
         moreButton.style.display = "none"
