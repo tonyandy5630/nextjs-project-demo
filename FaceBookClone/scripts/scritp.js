@@ -19,3 +19,16 @@ function showLess() {
         more[i].style.display = "none"
     }
 }
+
+function addOverlay(obj) {
+    var overlay = document.createElement('span');
+    overlay.classList.add('story-overlay')
+    obj.appendChild(overlay)
+}
+
+function deleteOverlay() {
+    const overlay = document.querySelectorAll(".story-tray>.story-overlay")
+    for (var e of overlay) {
+        e.remove()
+    }
+}
