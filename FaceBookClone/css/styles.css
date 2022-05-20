@@ -1,8 +1,11 @@
 .header {
+    position: sticky;
+    top: 0;
     border-bottom: 0.05em solid rgb(95, 95, 95);
     background-color: #242526;
     height: 65px;
     margin: 0;
+    z-index: 10;
 }
 
 body {
@@ -184,11 +187,14 @@ ul.flex-container--util>li.header-icon-container__round:first-child:hover {
 
 .nav-left {
     display: flex;
+    position: sticky;
+    height: 90%;
     justify-content: center;
     flex-direction: column;
     width: 25%;
-    overflow: scroll;
-    overflow-y: none;
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 9;
 }
 
 .nav-left--half {
@@ -267,7 +273,75 @@ div.nav-left--bottom-half .nav-left-icon--item {
     padding: 0 8px;
 }
 
-footer {
+.feed-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news-feed-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.post-container {
+    display: flex;
+}
+
+.story-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed-1 {
+    display: flex;
+}
+
+.feed-2 {
+    display: flex;
+}
+
+.feed-3 {
+    display: flex;
+}
+
+.feed-4 {
+    display: flex;
+}
+
+.story-tray {
+    display: flex;
+    height: 15%;
+    background-image: url(.../images/str1);
+}
+
+.create-story {}
+
+.story-1 {
+    position: relative;
+}
+
+.story-2 {
+    position: relative;
+}
+
+.story-3 {
+    position: relative;
+}
+
+.story-4 {
+    position: relative;
+}
+
+.footer {
+    display: flex;
     margin-left: 10px;
     padding-left: 8px;
     font-size: 0.9em;

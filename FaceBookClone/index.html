@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- #region header-->
     <div class="header">
         <div class="flex-container">
             <!-- Icons on the left-->
@@ -75,85 +76,111 @@
             </ul>
         </div>
     </div>
+    <!-- #endregion -->
+    <!-- #region nav-left-->
+    <div class="feed-container">
+        <div class="nav-left ">
+            <div class="nav-left--half ">
+                <div class="nav-left--item-container ">
+                    <img class="avatar .nav-left-icon--item nav-left--avatar" src="images/header-ava.png " alt="facebook ">
+                    <span class="nav-left-icon--title"> Linh Linh</span>
+                </div>
 
-    <!-- End of header-->
-    <div class="nav-left ">
-        <div class="nav-left--half ">
-            <div class="nav-left--item-container ">
-                <img class="avatar .nav-left-icon--item nav-left--avatar" src="images/header-ava.png " alt="facebook ">
-                <span class="nav-left-icon--title"> Linh Linh</span>
-            </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/friends.png " alt="friends-icon " class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Friends</span>
+                </div>
 
-            <div class="nav-left--item-container ">
-                <img src="images/friends.png " alt="friends-icon " class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Friends</span>
-            </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/group.png" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Groups</span>
+                </div>
 
-            <div class="nav-left--item-container ">
-                <img src="images/group.png" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Groups</span>
-            </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/home-button.png" alt="icon market" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Market</span>
+                </div>
 
-            <div class="nav-left--item-container ">
-                <img src="images/home-button.png" alt="icon market" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Market</span>
-            </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/play.png" alt="icon for play video" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Watch</span>
+                </div>
 
-            <div class="nav-left--item-container ">
-                <img src="images/play.png" alt="icon for play video" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Watch</span>
-            </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/clock-time.png" alt="icon for rewind your post" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Memories</span>
+                </div>
+                <div id="more-button" onclick="showMore()" class="nav-left--item-container">
+                    <img src="images/arrow-down.png" class="nav-left-icon--item " alt="">
+                    <span class="nav-left-icon--title">Show More </span>
+                </div>
+                <div id="more" class="nav-left--item-container">
+                    <img src="images/save.png" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Saved</span>
+                </div>
+                <div id="more" class="nav-left--item-container">
+                    <img src="images/save.png" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Saved</span>
+                </div>
+                <div id="more" class="nav-left--item-container">
+                    <img src="images/save.png" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Saved</span>
+                </div>
+                <div id="more" onclick="showLess()" class="nav-left--item-container">
+                    <img src="images/up-arrow.png" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Show Less</span>
+                </div>
 
-            <div class="nav-left--item-container ">
-                <img src="images/clock-time.png" alt="icon for rewind your post" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Memories</span>
             </div>
-            <div id="more-button" onclick="showMore()" class="nav-left--item-container">
-                <img src="images/arrow-down.png" class="nav-left-icon--item " alt="">
-                <span class="nav-left-icon--title">Show More </span>
+            <div class="nav-left--half nav-left--bottom-half">
+                <div class="nav-left--title">
+                    <p class="nav-left--title-header"> Your shortcuts</p>
+                    <p style="padding-right:3px;"> Edit</p>
+                </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/IMG_20200701_181545.jpg" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Go somewhere else</span>
+                </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/linhaidang-firefly.png" alt="" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Review Vung Tau</span>
+                </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/LUK2.jpg" alt="" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Little UK Saigon</span>
+                </div>
+                <div class="nav-left--item-container ">
+                    <img src="images/Phú Quốc.png" alt="" class="nav-left-icon--item ">
+                    <span class="nav-left-icon--title"> Whats in Phu Quoc ?</span>
+                </div>
             </div>
-            <div id="more" class="nav-left--item-container">
-                <img src="images/save.png" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Saved</span>
+            <footer>Made by Bui Thanh Tu. 15/5/2022. Contact via: tonyandy789@gmail.com.tonyandy789 © 2022</footer>
+        </div>
+        <!-- End of nav-left-->
+        <!-- #endregion -->
+
+        <!-- #region Start of news feed-->
+        <div class="news-feed-container">
+            <div class="story-container">
+                <div class="story-tray create-story"></div>
+                <div class="story-tray story-1"></div>
+                <div class="story-tray story-2"></div>
+                <div class="story-tray story-3"></div>
+                <div class="story-tray story-4"></div>
             </div>
-            <div id="more" class="nav-left--item-container">
-                <img src="images/save.png" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Saved</span>
-            </div>
-            <div id="more" class="nav-left--item-container">
-                <img src="images/save.png" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Saved</span>
-            </div>
-            <div id="more" onclick="showLess()" class="nav-left--item-container">
-                <img src="images/up-arrow.png" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Show Less</span>
-            </div>
+            <div class="post-container"></div>
+            <div class="feed-1"></div>
+            <div class="feed-2"></div>
+            <div class="feed-3"></div>
+            <div class="feed-4"></div>
+        </div>
+        <div class="right-nav">
 
         </div>
-        <div class="nav-left--half nav-left--bottom-half">
-            <div class="nav-left--title">
-                <p class="nav-left--title-header"> Your shortcuts</p>
-                <p style="padding-right:3px;"> Edit</p>
-            </div>
-            <div class="nav-left--item-container ">
-                <img src="images/IMG_20200701_181545.jpg" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Go somewhere else</span>
-            </div>
-            <div class="nav-left--item-container ">
-                <img src="images/linhaidang-firefly.png" alt="" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Review Vung Tau</span>
-            </div>
-            <div class="nav-left--item-container ">
-                <img src="images/LUK2.jpg" alt="" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Little UK Saigon</span>
-            </div>
-            <div class="nav-left--item-container ">
-                <img src="images/Phú Quốc.png" alt="" class="nav-left-icon--item ">
-                <span class="nav-left-icon--title"> Whats in Phu Quoc ?</span>
-            </div>
-        </div>
-        <footer>Made by Bui Thanh Tu. 15/5/2022. Contact via: tonyandy789@gmail.com.tonyandy789 © 2022</footer>
     </div>
+    <!-- #endregion -->
+    <!-- Start of side nav-->
+
 
 </body>
 
