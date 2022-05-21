@@ -395,10 +395,10 @@
             position: relative;
         }
         
-        .footer {
+        footer {
             display: flex;
             margin-left: 10px;
             padding-left: 8px;
             font-size: 0.9em;
-            color: #9b9ea2;
+            color: #dadce0;
         }
