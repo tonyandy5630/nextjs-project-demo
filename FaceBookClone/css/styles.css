@@ -297,6 +297,7 @@
         
         .story-container {
             display: flex;
+            position: relative;
             height: 25%;
             justify-content: space-between;
             width: 594.8px;
@@ -327,7 +328,6 @@
             cursor: pointer;
             overflow: hidden;
             border-radius: 8px;
-            /* */
         }
         
         .story-overlay {
@@ -344,11 +344,24 @@
         .story-image {
             width: 100%;
             height: 100%;
-            transition: transform 0.2s ease-out;
         }
         
-        .story-image:hover {
-            transform: scale(1.1, 1.1);
+        @keyframes zoomIn {
+            from {
+                transform: scale(1, 1);
+            }
+            to {
+                transform: scale(1.1, 1.1);
+            }
+        }
+        
+        @keyframes zoomOut {
+            from {
+                transform: scale(1.1, 1.1);
+            }
+            to {
+                transform: scale(1, 1);
+            }
         }
         
         .story-owner--avatar-container {
@@ -365,6 +378,11 @@
             z-index: 9;
         }
         
+        .create-story img {
+            height: 155px;
+            width: 148.6px;
+        }
+        
         .story-owner--avatar-container__seen {
             border-color: rgb(98, 95, 95);
         }
@@ -379,20 +397,72 @@
             pointer-events: none;
         }
         
-        .create-story {}
-        
-        .story-1 {}
-        
-        .story-2 {
-            position: relative;
+        .create-story .story-overlay {
+            z-index: 10;
         }
         
-        .story-3 {
-            position: relative;
+        .story--add {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 23px;
+            height: 32px;
+            width: 32px;
+            background-color: #2e89ff;
+            border-radius: 50%;
+            border: #242526 solid 4px;
+            color: white;
+            font-size: 1.2em;
+            z-index: 9;
+            pointer-events: none;
         }
         
-        .story-4 {
-            position: relative;
+        .foot {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 22%;
+            background-color: #242526;
+            z-index: 9;
+        }
+        
+        span.foot>p {
+            color: white;
+            font-size: 0.8em;
+            margin: 0;
+            margin-top: 20px;
+        }
+        
+        .create-story {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+        
+        .show-all-story--button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(61, 61, 61);
+            position: absolute;
+            align-self: center;
+            right: -18px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            font-size: 1.1em;
+            color: rgb(156, 156, 156);
+            transition: background-color 0.1s ease-out;
+            z-index: 10;
+        }
+        
+        .show-all-story--button:hover {
+            background-color: rgb(101, 101, 101);
         }
         
         footer {

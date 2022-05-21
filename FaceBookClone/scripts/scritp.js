@@ -22,12 +22,17 @@ function showLess() {
 
 function addOverlay(obj) {
     var overlay = document.createElement('span');
+    var img = obj.querySelector("img")
+    img.style.animation = "zoomIn 0.2s ease-out both"
     overlay.classList.add('story-overlay')
     obj.appendChild(overlay)
 }
 
-function deleteOverlay() {
+function deleteOverlay(obj) {
     const overlay = document.querySelectorAll(".story-tray>.story-overlay")
+    var img = obj.querySelector("img")
+    img.removeAttribute("animation")
+    img.style.animation = "zoomOut 0.2s ease-in both"
     for (var e of overlay) {
         e.remove()
     }

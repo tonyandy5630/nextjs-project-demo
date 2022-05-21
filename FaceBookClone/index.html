@@ -162,32 +162,38 @@
         <!-- #region Start of news feed-->
         <div class="news-feed-container">
             <div class="story-container">
-                <div class="story-tray create-story" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay()">
-                    <img class="story-image" src="images/story4.jpg" alt="story">
+                <!-- Story section-->
+                <div class="story-tray create-story" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
+                    <span class="foot"> <p>Create story</p></span>
+                    <span class="story--add"><i class="fa-solid fa-plus"></i></span>
+                    <img class="story-image" src="images/header-ava.png" alt="story">
                 </div>
-                <div class="story-tray story-1" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay()">
-                    <!-- <span class="story-overlay"></span> -->
+                <!-- Story section-->
+                <div class="story-tray" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
                     <img class="story-image" src="images/story4.jpg" alt="story">
-                    <span class="story-owner--avatar-container story-owner--avatar-container__seen">
-                        <!-- <img class="story-owner--avatar"src="images/hinhlinh_eye.png"> -->
-                    </span>
+                    <span class="story-owner--avatar-container story-owner--avatar-container__seen"></span>
                     <span class="story-owner--name"> Someone's name</span>
                 </div>
-                <div class="story-tray story-2" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay()">
+                <!-- Story section-->
+                <div class="story-tray" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
                     <span class="story-owner--avatar-container"></span>
                     <img class="story-image" src="images/story4.jpg" alt="story">
                     <span class="story-owner--name"> Someone's name</span>
                 </div>
-                <div class="story-tray story-3" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay()">
+                <!-- Story section-->
+                <div class="story-tray" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
                     <span class="story-owner--avatar-container"></span>
                     <img class="story-image" src="images/story4.jpg" alt="story">
                     <span class="story-owner--name"> Someone's name</span>
                 </div>
-                <div class="story-tray story-4" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay()">
+                <!-- Story section-->
+                <div class="story-tray" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
                     <span class="story-owner--avatar-container"></span>
                     <img class="story-image" src="images/story4.jpg" alt="story">
                     <span class="story-owner--name"> Someone's name</span>
                 </div>
+                <!-- Story section-->
+                <span class="show-all-story--button"><i class="fa-solid fa-arrow-right-long"></i> </span>
             </div>
             <div class="post-container"></div>
             <div class="feed-1"></div>
