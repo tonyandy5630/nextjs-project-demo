@@ -299,9 +299,15 @@
         display: flex;
     }
     
+    .feed-block--container:first-of-type {
+        background-color: transparent;
+    }
+    
     .feed-block--container {
         margin: 8px auto;
         width: 594.8px;
+        border-radius: 8px;
+        background-color: rgb(36, 37, 38);
     }
     
     .story-container {
@@ -474,7 +480,6 @@
         display: flex;
         flex-direction: row;
         background-color: #242526;
-        border-radius: 8px;
     }
     
     div.post-container .child-container--half {
@@ -553,7 +558,6 @@
     
     .icon-container {
         display: flex;
-        justify-content: space-evenly;
         border-radius: 8px;
         width: 100%;
         height: 24px;
@@ -580,17 +584,71 @@
         display: flex;
         justify-content: center;
         width: inherit;
+        align-items: center;
     }
     
     .icon-img img {
         width: 24px;
         height: 24px;
-        ;
     }
     
     .icon-header {
         min-width: 101px;
         text-align: center;
+    }
+    
+    .meet-room .child-container {
+        align-items: center;
+    }
+    
+    .meet-room {
+        display: flex;
+        position: relative;
+        overflow-x: hidden;
+        height: 72px;
+        align-items: center;
+    }
+    
+    .btn {
+        border-radius: 18px;
+        border: 2px rgba(45, 136, 255, 0.2) solid;
+        color: #4686f6;
+        min-width: 170px;
+        max-width: 190px;
+    }
+    
+    .meet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0 8px;
+    }
+    
+    .meet-carousel--container {
+        padding: 0;
+        flex: 1;
+        width: 594.8px;
+    }
+    
+    .nxt-button {
+        position: absolute;
+        right: 14px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3e4042;
+        font-size: 1.6em;
+        color: rgb(155, 155, 155);
+        transition: background-color 0.15s ease-out;
+        z-index: 10;
+        border-radius: 50%;
+    }
+    
+    .nxt-button:hover {
+        background-color: #626568;
     }
     
     footer {
