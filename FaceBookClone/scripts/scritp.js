@@ -37,3 +37,13 @@ function deleteOverlay(obj) {
         e.remove()
     }
 }
+var carousel = document.querySelector('.meet-carousel--container');
+var scrollWidth = carousel.offsetWidth;
+
+function scrollLeft() {
+    carousel.style.transform = 'translateX(' + scrollWidth * 1 + 'px)';
+}
+
+function scrollRight() {
+    carousel.style.transform = 'translateX(' + scrollWidth * -1 + 'px)';
+}

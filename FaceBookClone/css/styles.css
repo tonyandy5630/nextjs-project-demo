@@ -542,6 +542,8 @@
         bottom: 0;
         right: 0;
         left: 0;
+        width: inherit;
+        height: inherit;
         border-radius: inherit;
         transition: background-image .15s ease-out;
     }
@@ -604,7 +606,7 @@
     .meet-room {
         display: flex;
         position: relative;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         height: 72px;
         align-items: center;
     }
@@ -618,22 +620,19 @@
     }
     
     .meet {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0 8px;
+        /* display: flex; */
+        margin: 0 8px;
     }
     
     .meet-carousel--container {
         padding: 0;
         flex: 1;
         width: 594.8px;
+        transition: transform .5s ease-out;
     }
     
     .nxt-button {
         position: absolute;
-        right: 14px;
         width: 48px;
         height: 48px;
         display: flex;
@@ -645,6 +644,14 @@
         transition: background-color 0.15s ease-out;
         z-index: 10;
         border-radius: 50%;
+    }
+    
+    .right {
+        right: 14px;
+    }
+    
+    .left {
+        left: 14px;
     }
     
     .nxt-button:hover {
