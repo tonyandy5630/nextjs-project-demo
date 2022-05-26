@@ -668,9 +668,27 @@
         background-color: #3e4042;
         font-size: 1.6em;
         color: rgb(155, 155, 155);
-        transition: background-color 0.15s ease-out;
+        transition: background-color 0.15s ease-out, visibility 0.15s ease-out;
         z-index: 10;
         border-radius: 50%;
+    }
+    
+    @keyframes disappear {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes disappear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
     
     .right {

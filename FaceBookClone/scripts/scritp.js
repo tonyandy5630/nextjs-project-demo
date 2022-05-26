@@ -38,45 +38,68 @@ function deleteOverlay(obj) {
 }
 let carousel = document.querySelector('.meet-carousel--container');
 let carouselWidth = carousel.offsetWidth;
-let initialLoc = carousel.getBoundingClientRect().x;
-let leftBtn = document.querySelector('#left')
-let RightBtn = document.querySelector('#right')
+let leftBtn = document.querySelector('.left')
+let RightBtn = document.querySelector('.right')
 let parentWidth = document.querySelector('.feed-block--container').offsetWidth;
+let maxScroll = Math.floor(carouselWidth / parentWidth);
+let scrollCount = 0;
+console.log(maxScroll);
 let scrollLength = 0;
 
-if (scrollLength <= 0) {
-    leftBtn.style.visibility = 'hidden'
-} else {
-    leftBtn.style.visibility = 'visible'
+window.addEventListener("load", function() {
+    visibleLeft();
+    visibleRight();
+})
+
+carousel.addEventListener("transitionend", function() {
+    visibleLeft();
+    visibleRight();
+})
+
+function visibleLeft() {
+    if (scrollLength == 0) {
+        leftBtn.style.visibility = 'hidden'
+    } else {
+        leftBtn.style.visibility = 'visible'
+    }
 }
 
-if (scrollLength > carouselWidth) {
-    RightBtn.style.visibility = 'hidden'
-} else {
-    leftBtn.style.visibility = 'visible'
-}
 
+function visibleRight() {
+    if (scrollCount == maxScroll) {
+        RightBtn.style.visibility = 'hidden'
+    } else {
+        RightBtn.style.visibility = 'visible'
+    }
+}
 
 function scrollToLeft() {
+    visibleRight();
+
     if (parentWidth < carouselWidth) {
         if (scrollLength > 0) {
             scrollLength -= parentWidth;
             carousel.style.transform = 'translateX(' + scrollLength * -1 + 'px)';
+            scrollCount--;
         }
         console.log("scroll:" + scrollLength)
     }
-
-
 }
 
 function scrollRight() {
+    visibleLeft();
     if (parentWidth < carouselWidth) {
+        scrollLength += parentWidth;
         if (scrollLength <= carouselWidth) {
-            scrollLength += parentWidth;
             carousel.style.transform = 'translateX(' + scrollLength * -1 + 'px)';
+            scrollCount++;
+        } else {
+            scrollLength -= parentWidth;
         }
 
         console.log("scroll left:" + scrollLength)
+        console.log("Scroll right:" + scrollCount)
     }
+
 
 }
