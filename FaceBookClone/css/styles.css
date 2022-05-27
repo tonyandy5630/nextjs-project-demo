@@ -534,6 +534,18 @@
         cursor: pointer;
     }
     
+    .post-avatar--online-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 9px;
+        height: 9px;
+        background-color: rgb(20 184 20);
+        border-radius: 50%;
+        border: 2px solid rgb(36, 37, 38);
+        z-index: 8;
+    }
+    
     .input-bar--container {
         display: flex;
         justify-content: flex-start;
