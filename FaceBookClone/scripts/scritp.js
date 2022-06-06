@@ -82,7 +82,6 @@ function scrollToLeft() {
             carousel.style.transform = 'translateX(' + scrollLength * -1 + 'px)';
             scrollCount--;
         }
-        console.log("scroll:" + scrollLength)
     }
 }
 
@@ -96,10 +95,5 @@ function scrollRight() {
         } else {
             scrollLength -= parentWidth;
         }
-
-        console.log("scroll left:" + scrollLength)
-        console.log("Scroll right:" + scrollCount)
     }
-
-
 }
