@@ -8,6 +8,26 @@
         z-index: 10;
     }
     
+    .side-container {
+        display: flex;
+        width: 50%;
+    }
+    
+    .side-container_right-side {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+    }
+    
+    .middle-container {
+        display: flex;
+        width: 100%;
+    }
+    
+    .util-container {
+        display: flex;
+    }
+    
     * {
         margin: 0;
         padding: 0;
@@ -28,7 +48,7 @@
         justify-items: baseline;
         align-items: center;
         height: 65px;
-        width: 80%;
+        width: 100%;
     }
     
     .flex-container--icon {
@@ -72,12 +92,10 @@
         position: relative;
         margin: auto 0;
         background-color: #3a3b3c;
-        padding: 0;
         border-radius: 20px;
         border: none;
         height: 2.5rem;
         width: 250px;
-        margin-right: 50px;
     }
     
     input::placeholder {
@@ -105,8 +123,18 @@
         color: #dbdde2;
     }
     
+    .header-avartar-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+        pointer-events: none;
+    }
+    
     .header--icon-container {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: background-color 0.2s ease-out;
     }
     
@@ -147,21 +175,9 @@
         visibility: hidden;
     }
     
-    .flex-container--util {
-        position: absolute;
-        right: 0;
-        align-items: flex-end;
-        margin-left: auto;
-        width: 20%;
-    }
-    
     .util-icon {
-        box-sizing: border-box;
-        width: inherit;
-        height: inherit;
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
+        width: fit-content;
+        height: fit-content;
         font-size: 1.2em;
         color: #e4e6eb;
     }
@@ -180,29 +196,24 @@
     
     .avatar {
         width: 28px;
+        margin: 0 3px;
     }
     
     .header-avatar {
-        position: absolute;
-        left: -12%;
-        top: 6px;
+        border-radius: 50%;
     }
     
-    ul.flex-container--util>li.header-icon-container__round:first-child {
-        width: 45px;
+    .header-icon-container__oval {
+        width: fit-content;
         border-radius: 23px;
-        padding: 0 12px;
+        padding: 0 3px;
         position: relative;
         background-color: transparent;
         transition: background-color 0.2s ease-out;
     }
     
-    ul.flex-container--util>li.header-icon-container__round:first-child:hover {
+    .header-icon-container__oval:hover {
         background-color: #626262;
-    }
-    
-    .util-icon .header-avatar {
-        border-radius: 50%;
     }
     
     .side-nav {
@@ -224,10 +235,7 @@
     }
     
     .header-avatar--name {
-        position: absolute;
-        right: -8px;
-        top: 32%;
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     
     .child-container {
