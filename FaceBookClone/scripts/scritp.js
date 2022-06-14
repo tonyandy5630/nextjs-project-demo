@@ -43,7 +43,6 @@ let RightBtn = document.querySelector('.right')
 let parentWidth = document.querySelector('.feed-block--container').offsetWidth;
 let maxScroll = Math.floor(carouselWidth / parentWidth);
 let scrollCount = 0;
-console.log(maxScroll);
 let scrollLength = 0;
 
 window.addEventListener("load", function() {
@@ -97,3 +96,19 @@ function scrollRight() {
         }
     }
 }
+
+function addContacts() {
+
+    const parent = document.querySelector('.right-nav > .child-container--bottom-half')
+    for (i = 0; i < 20; i++) {
+        let div = document.createElement('div');
+        div.classList.add('child-container--item-container')
+        div.innerHTML = ` <span class="post--avatar meet">
+                        <img class="post-avatar--img" src="images/header-ava.png">
+                        <span class="online-icon"></span>
+                    </span>
+                    <span class="child-container-icon--title"> Ngoc Linh</span>`;
+        parent.appendChild(div)
+    }
+}
+addContacts();

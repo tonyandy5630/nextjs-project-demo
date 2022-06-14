@@ -253,6 +253,7 @@
         align-items: center;
         height: 44px;
         transition: background-color 0.2s ease-out;
+        border-radius: 8px;
     }
     
     .side-nav .child-container--half .child-container--item-container:hover {
@@ -286,7 +287,7 @@
     }
     
     .side-nav .child-container--half .child-container--item-container {
-        padding: 8px;
+        padding: 8px 6px;
     }
     
     .scrollbox .child-container {
@@ -355,8 +356,7 @@
     .child-container--title-header {
         color: #9b9ea2;
         font-weight: bolder;
-        margin-left: 10px;
-        padding: 0 8px;
+        padding: 8px;
     }
     
     .feed-container {
@@ -573,6 +573,7 @@
         position: relative;
         margin: 0 10px 0 0;
         border-radius: 50%;
+        width: fit-content;
         height: 40px;
         cursor: pointer;
     }
@@ -621,7 +622,7 @@
         bottom: 0;
         right: 0;
         left: 0;
-        width: inherit;
+        width: 100%;
         height: inherit;
         border-radius: inherit;
         transition: background-image .15s ease-out;
@@ -815,7 +816,7 @@
         border-radius: 50%;
     }
     
-    .post-more {
+    .option-container {
         font-size: 1.3em;
         display: flex;
         color: #b0b3b8;
@@ -828,7 +829,7 @@
         cursor: pointer;
     }
     
-    .post-more:hover {
+    .option-container:hover {
         background-color: rgba(102, 102, 102, 0.597);
     }
     
@@ -1116,6 +1117,11 @@
     .sponsored-access {
         font-size: 0.7em;
         color: #a7aab0;
+    }
+    
+    .contact-option--container {
+        display: flex;
+        font-size: 0.7em;
     }
     
      ::-webkit-scrollbar-thumb {
