@@ -98,7 +98,6 @@ function scrollRight() {
 }
 
 function addContacts() {
-
     const parent = document.querySelector('.right-nav > .child-container--bottom-half')
     for (i = 0; i < 20; i++) {
         let div = document.createElement('div');
