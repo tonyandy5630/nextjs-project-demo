@@ -1,8 +1,9 @@
 import "./App.css";
-import ExpenseItem from "./Components/Expense/ExpenseItem";
-import Card from "./Components/UI/Card"
+import { useState } from "react";
+import NewExpense from "./Components/NewExpense/NewExpense";
+import Expense from "./Components/Expense/Expense";
 
-const expenses = [
+const DUMMY_EXPENSES = [
   {
     id: "e1",
     title: "Toilet Paper",
@@ -13,7 +14,7 @@ const expenses = [
     id: "e2",
     title: "Car Insurance",
     amount: 93.12,
-    date: new Date(2022, 6, 10), 
+    date: new Date(2022, 6, 10),
   },
   {
     id: "e3",
@@ -29,22 +30,18 @@ const expenses = [
   },
 ];
 
-const expensesObj = expenses.map((item) => (
-  <ExpenseItem
-    key={item.id}
-    id={item.id}
-    title={item.title}
-    amount={item.amount}
-    date={item.date}
-  ></ExpenseItem>
-));
-
 function App() {
+
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+
+  const addExpenseHandler = (expense) => {
+    setExpenses((prevExpenses) => [expense, ...prevExpenses]);
+  };
   return (
-    <Card className="expense-items">
-      <h2>Let's get started</h2>
-      {expensesObj}
-    </Card>
+    <div>
+      <NewExpense onAddExpense={addExpenseHandler} />
+      <Expense items={expenses} />
+    </div>
   );
 }
 
