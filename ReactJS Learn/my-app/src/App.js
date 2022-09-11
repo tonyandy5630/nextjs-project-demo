@@ -28,6 +28,18 @@ const DUMMY_EXPENSES = [
     amount: 30,
     date: new Date(2022, 7, 9),
   },
+  {
+    id: "e5",
+    title: "Book",
+    amount: 21,
+    date: new Date(2023, 7, 9),
+  },
+  {
+    id: "e6",
+    title: "Shopee",
+    amount: 30,
+    date: new Date(2024, 7, 9),
+  },
 ];
 
 function App() {
