@@ -1,0 +1,12 @@
+$fullHeightScreen : 100vh;
+$light-Black:rgba(223, 220, 220, 0.729);
+@mixin flex-column-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height:$fullHeightScreen;
+    background-color:$light-Black ;
+    @include flex-column-center;
+}

@@ -1,0 +1,6 @@
+$warning-red:rgb(233, 50, 50);
+$text-color: rgb(95, 150, 156);
+
+.invalid {
+    border: 3px solid $warning-red;
+}
