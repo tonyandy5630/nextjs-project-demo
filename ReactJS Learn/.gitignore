@@ -29,6 +29,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+**/.next/
 
 ### VisualStudioCode ###
 .vscode/*
