@@ -41,16 +41,6 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const meetupId = context.params.meetupid;
 
-  let selectedMeetup = {
-    meetupData: {
-      title: "First Meetup",
-      image:
-        "https://media.architecturaldigest.com/photos/61e048de019f04fb96929319/4:3/w_3864,h_2898,c_limit/AD0222_PRESERVATION_LALBAUGH_1.jpg",
-      address: "Some address",
-      description: "This is a test",
-    },
-  };
-
   try {
     const client = await MongoClient.connect(
       "mongodb+srv://tonyandy5630:20112001Tu@cluster0.nm3nnu4.mongodb.net/meetups?retryWrites=true&w=majority"
@@ -59,25 +49,25 @@ export async function getStaticProps(context) {
 
     const meetupCollection = db.collection("meetups");
 
-    selectedMeetup = await meetupCollection.findOne({
+    const selectedMeetup = await meetupCollection.findOne({
       _id: ObjectId(meetupId),
     });
 
     client.close();
+
+    return {
+      props: {
+        meetupData: {
+          title: selectedMeetup.title,
+          image: selectedMeetup.image,
+          address: selectedMeetup.address,
+          description: selectedMeetup.description,
+        },
+      },
+    };
   } catch (error) {
     console.log(error);
   }
-
-  return {
-    props: {
-      meetupData: {
-        title: selectedMeetup.title,
-        image: selectedMeetup.image,
-        address: selectedMeetup.address,
-        description: selectedMeetup.description,
-      },
-    },
-  };
 }
 
 export default MeetUpDetails;
