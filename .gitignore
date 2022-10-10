@@ -41,6 +41,7 @@ nbdist/
 # Local History for Visual Studio Code
 .history/
 **/node_modules/
+test-app/
 # Built Visual Studio Code Extensions
 *.vsix
 
