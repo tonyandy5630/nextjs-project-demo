@@ -1,624 +1,935 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebuk</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="images/fb.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a5f6897527.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/fb.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a5f6897527.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts/scritp.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- #region header-->
     <div class="header">
-        <div class="flex-container">
-            <!-- Icons on the left-->
-            <div class="side-container">
-                <img class="header--logo" src="images/logoFb.png">
-                <div class="header--search-bar-container">
-                    <input class="header--search-bar" type="text" placeholder=" Find on Facebuk">
-                </div>
-            </div>
-
-            <!-- Icons on the middle-->
-            <ul class="middle-container flex-container--icon">
-                <li class="header--icon-container header--icon-container__rect header--icon-container__rect-active">
-                    <a href="#" class="header--icon"><i class="fa-solid fa-house-chimney "></i> </a>
-                </li>
-
-                <li class="header--icon-container header--icon-container__rect">
-                    <a href="#" class="header--icon"><i class="fa-solid fa-video "></i></a>
-                </li>
-
-                <li class="header--icon-container header--icon-container__rect ">
-                    <a href="# " class="header--icon "><i class="fa-solid fa-basket-shopping "></i></a>
-                </li>
-
-                <li class="header--icon-container header--icon-container__rect ">
-                    <a href="# " class="header--icon "><i class="fa-solid fa-user-group "></i></a>
-                </li>
-                <li class="header--icon-container header--icon-container__rect ">
-                    <a href="# " class="header--icon "><i class="fa-solid fa-gamepad "></i></a>
-                </li>
-            </ul>
-            <!-- Icons on the right-->
-            <div class="side-container_right-side">
-                <ul class="util-container">
-                    <li class="header--icon-container header-icon-container__oval ">
-                        <a class="header-avartar-container" style="position: relative; ">
-                            <img class="header-avatar avatar " src="images/header-ava.png ">
-                            <span class="header-avatar--name ">Linh</span>
-                        </a>
-                    </li>
-                    <li class="header--icon-container header-icon-container__round ">
-                        <a class="util-icon ">
-                            <i class="fa-solid fa-bars "></i>
-                        </a>
-                    </li>
-                    <li class="header--icon-container header-icon-container__round ">
-                        <a class="util-icon ">
-                            <i class="fa-solid fa-keyboard "></i>
-                        </a>
-                    </li>
-                    <li class="header--icon-container header-icon-container__round ">
-                        <a class="util-icon ">
-                            <i class="fa-solid fa-bell "></i>
-                        </a>
-                    </li>
-                    <li class="header--icon-container header-icon-container__round ">
-                        <a class="util-icon ">
-                            <i class="fa-solid fa-screwdriver-wrench "></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="flex-container">
+        <!-- Icons on the left-->
+        <div class="side-container">
+          <img class="header--logo" src="images/logoFb.png" />
+          <div class="header--search-bar-container">
+            <input
+              class="header--search-bar"
+              type="text"
+              placeholder=" Find on Facebuk"
+            />
+          </div>
         </div>
+
+        <!-- Icons on the middle-->
+        <ul class="middle-container flex-container--icon">
+          <li
+            class="header--icon-container header--icon-container__rect header--icon-container__rect-active"
+          >
+            <a href="#" class="header--icon"
+              ><i class="fa-solid fa-house-chimney"></i>
+            </a>
+          </li>
+
+          <li class="header--icon-container header--icon-container__rect">
+            <a href="#" class="header--icon"
+              ><i class="fa-solid fa-video"></i
+            ></a>
+          </li>
+
+          <li class="header--icon-container header--icon-container__rect">
+            <a href="# " class="header--icon"
+              ><i class="fa-solid fa-basket-shopping"></i
+            ></a>
+          </li>
+
+          <li class="header--icon-container header--icon-container__rect">
+            <a href="# " class="header--icon"
+              ><i class="fa-solid fa-user-group"></i
+            ></a>
+          </li>
+          <li class="header--icon-container header--icon-container__rect">
+            <a href="# " class="header--icon"
+              ><i class="fa-solid fa-gamepad"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- Icons on the right-->
+        <div class="side-container_right-side">
+          <ul class="util-container">
+            <li class="header--icon-container header-icon-container__oval">
+              <a class="header-avartar-container" style="position: relative">
+                <img
+                  class="header-avatar avatar"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg "
+                />
+                <span class="header-avatar--name">Linh</span>
+              </a>
+            </li>
+            <li class="header--icon-container header-icon-container__round">
+              <a class="util-icon">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </li>
+            <li class="header--icon-container header-icon-container__round">
+              <a class="util-icon">
+                <i class="fa-solid fa-keyboard"></i>
+              </a>
+            </li>
+            <li class="header--icon-container header-icon-container__round">
+              <a class="util-icon">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+            </li>
+            <li class="header--icon-container header-icon-container__round">
+              <a class="util-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- #endregion header-->
     <!-- #region feed -->
-    <div style="display:flex; justify-content:space-between; ">
-        <div class="nav-container">
-            <div class="scrollbox">
-                <!-- #region left side nav-->
-                <div class="child-container side-nav">
-                    <div class="child-container--half ">
-                        <div class="child-container--item-container ">
-                            <img class="avatar .child-container-icon--item child-container--avatar" src="images/header-ava.png " alt="facebook ">
-                            <span class="child-container-icon--title"> Linh Linh</span>
-                        </div>
-
-                        <div class="child-container--item-container ">
-                            <img src="images/friends.png " alt="friends-icon " class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Friends</span>
-                        </div>
-
-                        <div class="child-container--item-container ">
-                            <img src="images/group.png" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Groups</span>
-                        </div>
-
-                        <div class="child-container--item-container ">
-                            <img src="images/home-button.png" alt="icon market" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Market</span>
-                        </div>
-
-                        <div class="child-container--item-container ">
-                            <img src="images/play.png" alt="icon for play video" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Watch</span>
-                        </div>
-
-                        <div class="child-container--item-container ">
-                            <img src="images/clock-time.png" alt="icon for rewind your post" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Memories</span>
-                        </div>
-                        <div id="more-button" onclick="showMore()" class="child-container--item-container">
-                            <img src="images/arrow-down.png" class="child-container-icon--item " alt="">
-                            <span class="child-container-icon--title">Show More </span>
-                        </div>
-                        <div id="more" class="child-container--item-container">
-                            <img src="images/save.png" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Saved</span>
-                        </div>
-                        <div id="more" class="child-container--item-container">
-                            <img src="images/save.png" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Saved</span>
-                        </div>
-                        <div id="more" class="child-container--item-container">
-                            <img src="images/save.png" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Saved</span>
-                        </div>
-                        <div id="more" onclick="showLess()" class="child-container--item-container">
-                            <img src="images/up-arrow.png" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Show Less</span>
-                        </div>
-
-                    </div>
-                    <div class="child-container--half child-container--bottom-half">
-                        <div class="child-container--title">
-                            <p class="child-container--title-header"> Your shortcuts</p>
-                            <p style="padding-right:3px;"> Edit</p>
-                        </div>
-                        <div class="child-container--item-container ">
-                            <img src="images/IMG_20200701_181545.jpg" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Go somewhere else</span>
-                        </div>
-                        <div class="child-container--item-container ">
-                            <img src="images/story2.png" alt="" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Review Vung Tau</span>
-                        </div>
-                        <div class="child-container--item-container ">
-                            <img src="images/group-avatar.jpg" alt="" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Little UK Saigon</span>
-                        </div>
-                        <div class="child-container--item-container ">
-                            <img src="images/story3.png" alt="" class="child-container-icon--item ">
-                            <span class="child-container-icon--title"> Whats in Phu Quoc ?</span>
-                        </div>
-                    </div>
-                    <footer>Made by Bui Thanh Tu. 15/5/2022. Contact via: tonyandy789@gmail.com.tonyandy789 © 2022</footer>
-                </div>
-                <!-- #endregion left side nav-->
-            </div>
-        </div>
-        <div class="feed-container">
-            <div class="news-feed-container">
-                <!-- #region Story trays section -->
-                <div class="story-container feed-block--container">
-                    <!-- Story section-->
-                    <div class="story-tray create-story" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
-                        <span class="foot"> <p>Create story</p></span>
-                        <span class="story--add"><i class="fa-solid fa-plus"></i></span>
-                        <img class="story-image" src="images/header-ava.png" alt="story">
-                    </div>
-                    <!-- Story section-->
-                    <div class="story-tray" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
-                        <img class="story-image" src="images/story4.jpg" alt="story">
-                        <span class="story-owner--avatar-container story-owner--avatar-container__seen"></span>
-                        <span class="story-owner--name"> Someone's name</span>
-                    </div>
-                    <!-- Story section-->
-                    <div class="story-tray" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
-                        <span class="story-owner--avatar-container"></span>
-                        <img class="story-image" src="images/story4.jpg" alt="story">
-                        <span class="story-owner--name"> Someone's name</span>
-                    </div>
-                    <!-- Story section-->
-                    <div class="story-tray" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
-                        <span class="story-owner--avatar-container"></span>
-                        <img class="story-image" src="images/story4.jpg" alt="story">
-                        <span class="story-owner--name"> Someone's name</span>
-                    </div>
-                    <!-- Story section-->
-                    <div class="story-tray" onmouseenter="addOverlay(this)" onmouseleave="deleteOverlay(this)">
-                        <span class="story-owner--avatar-container"></span>
-                        <img class="story-image" src="images/story4.jpg" alt="story">
-                        <span class="story-owner--name"> Someone's name</span>
-                    </div>
-                    <!-- Story section-->
-                    <span class="show-all-story--button"><i class="fa-solid fa-arrow-right-long"></i> </span>
-                </div>
-                <!-- #endregion End of Story trays -->
-                <!-- #region post area-->
-                <div class="post-container feed-block--container">
-                    <div class="child-container">
-                        <div class="child-container--half">
-                            <span class="post--avatar">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="post-avatar--overlay"></span>
-                            </span>
-                            <span class="input-bar--container">
-                                    <span class="placeholder"> Hello Linh, What's on your mind? </span>
-                            </span>
-                        </div>
-                        <div class="child-container--half child-container--bottom-half">
-                            <div class="icon-container">
-                                <span class="icon-img">
-                                        <img src="images/video.png" alt="">
-                                        <span class="icon-header">Livestream</span>
-                                </span>
-
-                            </div>
-                            <div class="icon-container">
-                                <span class="icon-img">
-                                        <img src="images/album.png" alt="">
-                                        <span class="icon-header">Photo/Video</span>
-                                </span>
-                            </div>
-                            <div class="icon-container">
-                                <span class="icon-img">
-                                        <img src="images/smile.png" alt="">
-                                        <span class="icon-header">Emotion/Activity</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- #endregion post area -->
-                <!-- #region meet-room area-->
-                <div class="meet-room feed-block--container">
-                    <div class="child-container meet-carousel--container">
-                        <span style="min-width:14px;"></span>
-                        <div class="icon-container btn">
-                            <span class="icon-img">
-                                        <img src="images/meeting.png" alt="">
-                                        <span class="icon-header">Create a meeting</span>
-                            </span>
-                        </div>
-                        <!-- #region -->
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                <img class="post-avatar--img" src="images/header-ava.png">
-                                <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span class="post--avatar meet">
-                                    <img class="post-avatar--img" src="images/header-ava.png">
-                                    <span class="online-icon"></span>
-                        <span class="post-avatar--overlay"></span>
-                        </span>
-                        <span style="min-width:14px;"></span>
-                    </div>
-                    <div id="left" onclick="scrollToLeft()" class="nxt-button left" style="visibility: hidden;">
-                        <i class="fa-solid fa-chevron-left "></i>
-                    </div>
-                    <div id="right" onclick="scrollRight() " class="nxt-button right " style="visibility: visible;">
-                        <i class="fa-solid fa-angle-right "></i>
-                    </div>
-                </div>
-                <!-- #endregion-->
-                <!-- #region  news-feed-->
-                <div class="feed feed-block--container ">
-                    <div class="child-container">
-                        <!-- #region title -->
-                        <div class="child-container--half">
-                            <div class=" child-container--item-container post-title">
-                                <div class="post-avatar-container">
-                                    <img src="images/story3.png " class="child-container-icon--item ">
-                                    <div class="post-owner--avatar-container">
-                                        <img src="images/hinhlinh_eye.png" class="post-owner--avatar">
-                                    </div>
-                                </div>
-                                <div class="child-container--title-group ">
-                                    <a class="child-container-icon--title child-container-icon--title-post-from "> This is a group name </a>
-                                    <div class="child-container-icon--title post-owner--group ">
-                                        <a class="child-container-icon--title-post-owner-name "> This is a name</a>
-                                        <a class="dot-seperate--container child-container-icon--title-post-owner-name">.</a>
-                                        <a class="child-container-icon--title-post-owner-name ">1 hour</a>
-                                        <a class="dot-seperate--container child-container-icon--title-post-owner-name">.</a>
-                                        <a class="child-container-icon--title-post-owner-name ">
-                                            <i class="fa-solid fa-user-group child-container-icon--title-post-owner-name"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <span class="option-container"><i class="fa-solid fa-ellipsis"></i></span>
-                            </div>
-                        </div>
-                        <div class="child-container--item-container status-container">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet tellus cras adipiscing enim eu turpis egestas.</p>
-                        </div>
-                    </div>
-                    <!-- #endregion title -->
-                    <!-- #region news -->
-                    <div class="news-container">
-                        <span class="post-container--child"><img class="post-feed" src="images/story4.jpg" alt="images"></span>
-                        <span class="post-container--child"><img class="post-feed" src="images/story4.jpg" alt="images"></span>
-                    </div>
-                    <!-- #endregion -->
-                    <!-- #region interaction -->
-                    <div class="child-container interaction">
-                        <div class="reaction-area">
-                            <div class="child-container--half">
-                                <div class="reaction-container">
-                                    <span class="reaction-icon--container reaction-icon--container__like">
-                                            <i class="fa-solid fa-thumbs-up"></i>
-                                        </span>
-                                    <span class="reaction-icon--container reaction-icon--container__heart">
-                                            <i class="fa-solid fa-heart"></i>
-                                        </span>
-                                    <span class="post-reaction--number-container"> <p class="post-reaction--number">1000</p> </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cmt-share--area">
-                            <a class="cmt-share--block">100 Comments</a>
-                            <a class="cmt-share--block"> 3 Shares</a>
-                        </div>
-                    </div>
-                    <div class="child-container interaction interaction-container">
-                        <div class="child-container--item-container">
-                            <span class="reaction-title">
-                                <i class="fa-solid fa-thumbs-up"></i>
-                                <span class="interaction-name"> Like</span>
-                            </span>
-
-                        </div>
-                        <div class="child-container--item-container">
-                            <span class="reaction-title">
-                                <i class="fa-solid fa-comment"></i>
-                                <span class="interaction-name"> Comment</span>
-                            </span>
-
-                        </div>
-                        <div class="child-container--item-container">
-                            <span class="reaction-title">
-                                <i class="fa-solid fa-share-nodes"></i>
-                                <span class="interaction-name"> Share</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="child-container comment-section--container">
-                        <div class="comment-section">
-                            <div class="all-comment-section--btn">
-                                <div class="reaction-title">
-                                    <span class="interaction-name">All comments</span>
-                                    <i class="interaction-name fa-solid fa-caret-down"></i>
-                                </div>
-                            </div>
-                            <div class="new-comment--container">
-                                <span class="comment-avatar--container"> 
-                                    <img class="comment-avatar" src="images/header-ava.png" alt="your avatar">
-                                    <div class="online-icon"></div>
-                                </span>
-                                <span class="comment-bar--container">
-                                    <div class="input-holder" contenteditable="true" aria-label="Write a comment">
-                                    <p id="input-place">
-                                    </p>
-                                <span class="comment-bar--placeholder"> Write a comment...</span>
-                            </div>
-                            <ul class="emote-container">
-                                <li><i class="fa-regular fa-face-smile"></i></li>
-                                <li><i class="fa fa-camera" aria-hidden="true"></i></li>
-                                <li><i class="fa-regular fa-note-sticky"></i></li>
-                                <li><i class="fa fa-file-image" aria-hidden="true"></i></li>
-                            </ul>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="nav-container">
+    <div style="display: flex; justify-content: space-between">
+      <div class="nav-container">
         <div class="scrollbox">
-            <!-- #region left right side nav-->
-            <div class="child-container side-nav right-nav">
-                <div class="sponsor-container">
-                    <span class="sponsor-title"> Sponsored </span>
-                </div>
-                <div class="child-container--half ">
-                    <div class="child-container--item-container sponsor ">
-                        <img class="sponsor-avatar" src="images/header-ava.png " alt="facebook ">
-                        <div class="sponsor-title--group">
-                            <span class="sponsor-name">This is a sponsor name</span>
-                            <span class="sponsored-access"> this is a sponsor link</span>
-                        </div>
-                    </div>
+          <!-- #region left side nav-->
+          <div class="child-container side-nav">
+            <div class="child-container--half">
+              <div class="child-container--item-container">
+                <img
+                  class="avatar .child-container-icon--item child-container--avatar"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg "
+                  alt="facebook "
+                />
+                <span class="child-container-icon--title"> Linh Linh</span>
+              </div>
 
-                    <div class="child-container--item-container sponsor">
-                        <img class="sponsor-avatar" src="images/header-ava.png " alt="facebook ">
-                        <div class="sponsor-title--group">
-                            <span class="sponsor-name">This is another sponsor name</span>
-                            <span class="sponsored-access"> this is another sponsor link</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="child-container--half child-container--bottom-half">
-                    <div class="child-container--title">
-                        <p class="child-container--title-header"> Contacts </p>
-                        <div class="contact-option--container">
-                            <span class="option-container">
-                                <i class="fa-solid fa-video"></i>
-                            </span>
-                            <span class="option-container">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </span>
-                            <span class="option-container">
-                                <i class="fa-solid fa-ellipsis"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="child-container--item-container ">
-                        <span class="post--avatar meet">
-                            <img class="post-avatar--img" src="images/header-ava.png">
-                            <span class="online-icon"></span>
-                        </span>
-                        <span class="child-container-icon--title"> Ngoc Linh</span>
-                    </div>
-                </div>
+              <div class="child-container--item-container">
+                <img
+                  src="images/friends.png "
+                  alt="friends-icon "
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title"> Friends</span>
+              </div>
+
+              <div class="child-container--item-container">
+                <img
+                  src="images/group.png"
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title"> Groups</span>
+              </div>
+
+              <div class="child-container--item-container">
+                <img
+                  src="images/home-button.png"
+                  alt="icon market"
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title"> Market</span>
+              </div>
+
+              <div class="child-container--item-container">
+                <img
+                  src="images/play.png"
+                  alt="icon for play video"
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title"> Watch</span>
+              </div>
+
+              <div class="child-container--item-container">
+                <img
+                  src="images/clock-time.png"
+                  alt="icon for rewind your post"
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title"> Memories</span>
+              </div>
+              <div
+                id="more-button"
+                onclick="showMore()"
+                class="child-container--item-container"
+              >
+                <img
+                  src="images/arrow-down.png"
+                  class="child-container-icon--item"
+                  alt=""
+                />
+                <span class="child-container-icon--title">Show More </span>
+              </div>
+              <div id="more" class="child-container--item-container">
+                <img src="images/save.png" class="child-container-icon--item" />
+                <span class="child-container-icon--title"> Saved</span>
+              </div>
+              <div id="more" class="child-container--item-container">
+                <img src="images/save.png" class="child-container-icon--item" />
+                <span class="child-container-icon--title"> Saved</span>
+              </div>
+              <div id="more" class="child-container--item-container">
+                <img src="images/save.png" class="child-container-icon--item" />
+                <span class="child-container-icon--title"> Saved</span>
+              </div>
+              <div
+                id="more"
+                onclick="showLess()"
+                class="child-container--item-container"
+              >
+                <img
+                  src="images/up-arrow.png"
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title"> Show Less</span>
+              </div>
             </div>
-            <!-- #endregion left side nav-->
+            <div class="child-container--half child-container--bottom-half">
+              <div class="child-container--title">
+                <p class="child-container--title-header">Your shortcuts</p>
+                <p style="padding-right: 3px">Edit</p>
+              </div>
+              <div class="child-container--item-container">
+                <img
+                  src="images/IMG_20200701_181545.jpg"
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title">
+                  Go somewhere else</span
+                >
+              </div>
+              <div class="child-container--item-container">
+                <img
+                  src="images/story2.png"
+                  alt=""
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title">
+                  Review Vung Tau</span
+                >
+              </div>
+              <div class="child-container--item-container">
+                <img
+                  src="images/group-avatar.jpg"
+                  alt=""
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title">
+                  Little UK Saigon</span
+                >
+              </div>
+              <div class="child-container--item-container">
+                <img
+                  src="images/story3.png"
+                  alt=""
+                  class="child-container-icon--item"
+                />
+                <span class="child-container-icon--title">
+                  Whats in Phu Quoc ?</span
+                >
+              </div>
+            </div>
+            <footer>
+              Made by Bui Thanh Tu. 15/5/2022. Contact via:
+              tonyandy789@gmail.com.tonyandy789 © 2022
+            </footer>
+          </div>
+          <!-- #endregion left side nav-->
         </div>
-    </div>
-    </div>
-</body>
+      </div>
+      <div class="feed-container">
+        <div class="news-feed-container">
+          <!-- #region Story trays section -->
+          <div class="story-container feed-block--container">
+            <!-- Story section-->
+            <div
+              class="story-tray create-story"
+              onmouseenter="addOverlay(this)"
+              onmouseleave="deleteOverlay(this)"
+            >
+              <span class="foot"> <p>Create story</p></span>
+              <span class="story--add"><i class="fa-solid fa-plus"></i></span>
+              <img
+                class="story-image"
+                src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                alt="story"
+              />
+            </div>
+            <!-- Story section-->
+            <div
+              class="story-tray"
+              onmouseenter="addOverlay(this)"
+              onmouseleave="deleteOverlay(this)"
+            >
+              <img class="story-image" src="images/story4.jpg" alt="story" />
+              <span
+                class="story-owner--avatar-container story-owner--avatar-container__seen"
+              ></span>
+              <span class="story-owner--name"> Someone's name</span>
+            </div>
+            <!-- Story section-->
+            <div
+              class="story-tray"
+              onmouseenter="addOverlay(this)"
+              onmouseleave="deleteOverlay(this)"
+            >
+              <span class="story-owner--avatar-container"></span>
+              <img class="story-image" src="images/story4.jpg" alt="story" />
+              <span class="story-owner--name"> Someone's name</span>
+            </div>
+            <!-- Story section-->
+            <div
+              class="story-tray"
+              onmouseenter="addOverlay(this)"
+              onmouseleave="deleteOverlay(this)"
+            >
+              <span class="story-owner--avatar-container"></span>
+              <img class="story-image" src="images/story4.jpg" alt="story" />
+              <span class="story-owner--name"> Someone's name</span>
+            </div>
+            <!-- Story section-->
+            <div
+              class="story-tray"
+              onmouseenter="addOverlay(this)"
+              onmouseleave="deleteOverlay(this)"
+            >
+              <span class="story-owner--avatar-container"></span>
+              <img class="story-image" src="images/story4.jpg" alt="story" />
+              <span class="story-owner--name"> Someone's name</span>
+            </div>
+            <!-- Story section-->
+            <span class="show-all-story--button"
+              ><i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </div>
+          <!-- #endregion End of Story trays -->
+          <!-- #region post area-->
+          <div class="post-container feed-block--container">
+            <div class="child-container">
+              <div class="child-container--half">
+                <span class="post--avatar">
+                  <img
+                    class="post-avatar--img"
+                    src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                  />
+                  <span class="post-avatar--overlay"></span>
+                </span>
+                <span class="input-bar--container">
+                  <span class="placeholder">
+                    Hello Linh, What's on your mind?
+                  </span>
+                </span>
+              </div>
+              <div class="child-container--half child-container--bottom-half">
+                <div class="icon-container">
+                  <span class="icon-img">
+                    <img src="images/video.png" alt="" />
+                    <span class="icon-header">Livestream</span>
+                  </span>
+                </div>
+                <div class="icon-container">
+                  <span class="icon-img">
+                    <img src="images/album.png" alt="" />
+                    <span class="icon-header">Photo/Video</span>
+                  </span>
+                </div>
+                <div class="icon-container">
+                  <span class="icon-img">
+                    <img src="images/smile.png" alt="" />
+                    <span class="icon-header">Emotion/Activity</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #endregion post area -->
+          <!-- #region meet-room area-->
+          <div class="meet-room feed-block--container">
+            <div class="child-container meet-carousel--container">
+              <span style="min-width: 14px"></span>
+              <div class="icon-container btn">
+                <span class="icon-img">
+                  <img src="images/meeting.png" alt="" />
+                  <span class="icon-header">Create a meeting</span>
+                </span>
+              </div>
+              <!-- #region -->
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
 
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span class="post--avatar meet">
+                <img
+                  class="post-avatar--img"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                />
+                <span class="online-icon"></span>
+                <span class="post-avatar--overlay"></span>
+              </span>
+              <span style="min-width: 14px"></span>
+            </div>
+            <div
+              id="left"
+              onclick="scrollToLeft()"
+              class="nxt-button left"
+              style="visibility: hidden"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div
+              id="right"
+              onclick="scrollRight() "
+              class="nxt-button right"
+              style="visibility: visible"
+            >
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <!-- #endregion-->
+          <!-- #region  news-feed-->
+          <div class="feed feed-block--container">
+            <div class="child-container">
+              <!-- #region title -->
+              <div class="child-container--half">
+                <div class="child-container--item-container post-title">
+                  <div class="post-avatar-container">
+                    <img
+                      src="images/story3.png "
+                      class="child-container-icon--item"
+                    />
+                    <div class="post-owner--avatar-container">
+                      <img
+                        src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"  
+                        class="post-owner--avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="child-container--title-group">
+                    <a
+                      class="child-container-icon--title child-container-icon--title-post-from"
+                    >
+                      This is a group name
+                    </a>
+                    <div class="child-container-icon--title post-owner--group">
+                      <a class="child-container-icon--title-post-owner-name">
+                        This is a name</a
+                      >
+                      <a
+                        class="dot-seperate--container child-container-icon--title-post-owner-name"
+                        >.</a
+                      >
+                      <a class="child-container-icon--title-post-owner-name"
+                        >1 hour</a
+                      >
+                      <a
+                        class="dot-seperate--container child-container-icon--title-post-owner-name"
+                        >.</a
+                      >
+                      <a class="child-container-icon--title-post-owner-name">
+                        <i
+                          class="fa-solid fa-user-group child-container-icon--title-post-owner-name"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="option-container"
+                    ><i class="fa-solid fa-ellipsis"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="child-container--item-container status-container">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Amet tellus cras adipiscing enim eu turpis egestas.
+                </p>
+              </div>
+            </div>
+            <!-- #endregion title -->
+            <!-- #region news -->
+            <div class="news-container">
+              <span class="post-container--child"
+                ><img class="post-feed" src="images/story4.jpg" alt="images"
+              /></span>
+              <span class="post-container--child"
+                ><img class="post-feed" src="images/story4.jpg" alt="images"
+              /></span>
+            </div>
+            <!-- #endregion -->
+            <!-- #region interaction -->
+            <div class="child-container interaction">
+              <div class="reaction-area">
+                <div class="child-container--half">
+                  <div class="reaction-container">
+                    <span
+                      class="reaction-icon--container reaction-icon--container__like"
+                    >
+                      <i class="fa-solid fa-thumbs-up"></i>
+                    </span>
+                    <span
+                      class="reaction-icon--container reaction-icon--container__heart"
+                    >
+                      <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <span class="post-reaction--number-container">
+                      <p class="post-reaction--number">1000</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cmt-share--area">
+                <a class="cmt-share--block">100 Comments</a>
+                <a class="cmt-share--block"> 3 Shares</a>
+              </div>
+            </div>
+            <div class="child-container interaction interaction-container">
+              <div class="child-container--item-container">
+                <span class="reaction-title">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                  <span class="interaction-name"> Like</span>
+                </span>
+              </div>
+              <div class="child-container--item-container">
+                <span class="reaction-title">
+                  <i class="fa-solid fa-comment"></i>
+                  <span class="interaction-name"> Comment</span>
+                </span>
+              </div>
+              <div class="child-container--item-container">
+                <span class="reaction-title">
+                  <i class="fa-solid fa-share-nodes"></i>
+                  <span class="interaction-name"> Share</span>
+                </span>
+              </div>
+            </div>
+            <div class="child-container comment-section--container">
+              <div class="comment-section">
+                <div class="all-comment-section--btn">
+                  <div class="reaction-title">
+                    <span class="interaction-name">All comments</span>
+                    <i class="interaction-name fa-solid fa-caret-down"></i>
+                  </div>
+                </div>
+                <div class="new-comment--container">
+                  <span class="comment-avatar--container">
+                    <img
+                      class="comment-avatar"
+                      src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                      alt="your avatar"
+                    />
+                    <div class="online-icon"></div>
+                  </span>
+                  <span class="comment-bar--container">
+                    <div
+                      class="input-holder"
+                      contenteditable="true"
+                      aria-label="Write a comment"
+                    >
+                      <p id="input-place"></p>
+                      <span class="comment-bar--placeholder">
+                        Write a comment...</span
+                      >
+                    </div>
+                    <ul class="emote-container">
+                      <li><i class="fa-regular fa-face-smile"></i></li>
+                      <li><i class="fa fa-camera" aria-hidden="true"></i></li>
+                      <li><i class="fa-regular fa-note-sticky"></i></li>
+                      <li>
+                        <i class="fa fa-file-image" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-container">
+        <div class="scrollbox">
+          <!-- #region left right side nav-->
+          <div class="child-container side-nav right-nav">
+            <div class="sponsor-container">
+              <span class="sponsor-title"> Sponsored </span>
+            </div>
+            <div class="child-container--half">
+              <div class="child-container--item-container sponsor">
+                <img
+                  class="sponsor-avatar"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                  alt="facebook "
+                />
+                <div class="sponsor-title--group">
+                  <span class="sponsor-name">This is a sponsor name</span>
+                  <span class="sponsored-access"> this is a sponsor link</span>
+                </div>
+              </div>
+
+              <div class="child-container--item-container sponsor">
+                <img
+                  class="sponsor-avatar"
+                  src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                  alt="facebook "
+                />
+                <div class="sponsor-title--group">
+                  <span class="sponsor-name">This is another sponsor name</span>
+                  <span class="sponsored-access">
+                    this is another sponsor link</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="child-container--half child-container--bottom-half">
+              <div class="child-container--title">
+                <p class="child-container--title-header">Contacts</p>
+                <div class="contact-option--container">
+                  <span class="option-container">
+                    <i class="fa-solid fa-video"></i>
+                  </span>
+                  <span class="option-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                  <span class="option-container">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="child-container--item-container">
+                <span class="post--avatar meet">
+                  <img
+                    class="post-avatar--img"
+                    src="https://melmagazine.com/wp-content/uploads/2021/01/66f-1.jpg"
+                  />
+                  <span class="online-icon"></span>
+                </span>
+                <span class="child-container-icon--title"> Ngoc Linh</span>
+              </div>
+            </div>
+          </div>
+          <!-- #endregion left side nav-->
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
